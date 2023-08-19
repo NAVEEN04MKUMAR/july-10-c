@@ -98,7 +98,7 @@ const Signup = () => {
 
     // redirect to login page if true
     //console.log(res.payload);
-    if (res.data.success) navigate("/login");
+    if (res.payload.success) navigate("/login");
 
     // clearing the signup inputs
     setSignupData({
